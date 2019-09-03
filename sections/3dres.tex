@@ -1,0 +1,40 @@
+\begin{block}{Results}
+	
+	\begin{itemize}
+		\item built two very similar 3D detectors on different readout chips
+	\end{itemize}
+
+	\small{
+		\nicetab{|l|c|c|}{	&	\textbf{B5}	& \textbf{B6} \\\hline
+		readout chip (ROC)	& FE-I4B											& PSI46digv2.1respin 					\\
+		pixel pitch					& \SI{250x50}{\micro\meter}		& \SI{150x100}{\micro\meter}	\\
+		3D cell size				& \SI{50x50}{\micro\meter}		& \SI{50x50}{\micro\meter}		\\
+		ganging							& \SI{5x1}{}									&	\SI{3x2}{}									\\
+		size								& \SI{4.90x4.94}{\milli\meter}& \SI{4.85x4.90}{\milli\meter}\\
+		thickness						& \SI{510}{\micro\meter}			& \SI{500}{\micro\meter}			\\
+		\SI{50x50}{pixels}	&	\SI{53x67}{}								&	\SI{67x53}{}								\\
+		3D columns					& 7223												& 7223												\\
+		column diameter			& \SI{2.6}{\micro\meter}				& \SI{2.6}{\micro\meter}		\\
+		active area					& \SI{3.2x3.5}{\milli\meter}	& \SI{3.45x3.19}{\milli\meter}\\
+		bump bonding				& tin silver (IFAE)						& indium (Princeton)					\\
+	}}\normalsize
+	
+	\subfigs{\subfig{.07}{EM1}[Efficiency Map].}{\subfig{.07}{EffVol}[Efficiency vs. voltage.]}
+	
+	\begin{itemize}
+		\item telescope tracking resolution at DUT: \orderof{\SI{100}{\micro\meter}}
+		\item magenta area \ra bump bonding problems
+		\item green area \ra void in the diamond
+		\item efficiency in blue box: \SI{99.2}{\%} (\ra \SI{99.6}{\%} expected due to columns)
+		\item efficiency already plateaus at \SI{30}{\volt}
+	\end{itemize}
+	
+	\fig{.07}{PH3}[Pulse height distribution.]\vspace*{-2ex}
+	
+	\begin{itemize}
+		\item threshold of the chip: \SI{\sim3700}{e}
+		\item mean from MC of Langau fit: \SI{\sim14500}{e}
+		\item distribution below threshold not understood 
+	\end{itemize}
+	
+\end{block}

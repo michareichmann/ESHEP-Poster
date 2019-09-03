@@ -1,0 +1,29 @@
+\begin{block}{Analysis}
+	
+	\fig{.05}{WF1}[Raw waveform.]
+	
+	\begin{itemize}
+		\item digitised diamond waveforms with DRS4 Evaluation Board at \SI{2}{\giga S\per\second} 
+		\item DRS4 memory cells vary in size \ra timing correction required
+	\end{itemize}
+
+	\fig{.05}{WF100k.png}[100000 time corrected waveforms.]
+	
+	\begin{itemize}
+		\item signals in every bunch of the beam
+		\item most dominant peak (@\,\SI{\sim85}{\nano\second}) \ra triggered signal
+		\item no signals in pre-trigger bunch due to trigger dead time
+		\item use this region to measure noise
+	\end{itemize}
+	
+	\subfigs{\subfig{.07}{I4}[Signal integration.]}{\subfig{.07}{I6}[Noise integration.]}
+	
+	\begin{itemize}
+		\item find the triggered peak by max value
+		\item signal: integrate asymmetrically around the peak
+		\item noise: same integration window in centre of pre-trigger bunch
+		\item final pulse height: signal - pedestal integral event by event
+	\end{itemize}
+
+
+\end{block}
